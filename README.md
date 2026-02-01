@@ -26,8 +26,9 @@ Alternatively, use the direct link: [Download the Pre-compiled Blackwell Wheel](
 
 ```bash
 export LD_LIBRARY_PATH=/usr/local/cuda-13.0/lib64:$LD_LIBRARY_PATH export PATH=/usr/local/cuda-13.0/bin:$PATH
+```
 Install the pre-compiled wheel
-
+```bash
 pip install vllm-0.16.0rc1.dev84+gcd86fff38-cp310-cp310-linux_aarch64.whl
 ```
 
