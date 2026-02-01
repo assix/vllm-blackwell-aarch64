@@ -18,6 +18,7 @@ Installation
 1. Download the Wheel
 
 Download the latest .whl from the Releases page.
+
 2. Setup Environment & Install
 
 ```bash
