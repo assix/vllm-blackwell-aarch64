@@ -4,6 +4,7 @@ Optimized vLLM build for NVIDIA Grace Blackwell (GB10) and ARM64. This repositor
 🚀 Why this exists
 
 Standard vLLM wheels are typically built for x86_64 and older CUDA versions (12.1/12.4). Compiling natively for the GB10 on aarch64 can take over 20 minutes and often fails due to environment mismatches. This repository provides a pre-compiled wheel to leverage Blackwell's coherent unified memory immediately.
+
 ✨ Highlights
 
     Target Architecture: SM 12.1 (Blackwell GB10)
