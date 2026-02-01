@@ -37,15 +37,12 @@ pip install vllm-0.16.0rc1.dev84+gcd86fff38-cp310-cp310-linux_aarch64.whl
 To launch an OpenAI-compatible API server on your DGX Spark:
 
 ```bash
-python3 -m vllm.entrypoints.openai.api_server
-
---model openai/gpt-oss-120b
-
---tensor-parallel-size 1
-
---gpu-memory-utilization 0.90
-
---trust-remote-code
+python3.10 -m vllm.entrypoints.openai.api_server \
+    --model openai/gpt-oss-120b \
+    --tensor-parallel-size 1 \
+    --gpu-memory-utilization 0.80 \
+    --max-model-len 32768 \
+    --trust-remote-code
 ```
 🛠️ Building from Source
 
