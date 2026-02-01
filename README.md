@@ -27,10 +27,12 @@ Alternatively, use the direct link: [Download the Pre-compiled Blackwell Wheel](
 ```bash
 export LD_LIBRARY_PATH=/usr/local/cuda-13.0/lib64:$LD_LIBRARY_PATH export PATH=/usr/local/cuda-13.0/bin:$PATH
 ```
-Install the pre-compiled wheel
+### ⚠️ Installation (Do NOT skip)
+**Install the wheel:**
 ```bash
-pip install vllm-0.16.0rc1.dev84+gcd86fff38-cp310-cp310-linux_aarch64.whl
+pip install vllm-0.16.0rc1.dev84+gcd86fff38-cp310-cp310-linux_aarch64.whl --no-deps
 ```
+To prevent `pip` from overwriting your optimized Blackwell kernels with generic versions, you **must** install using `--no-deps`:
 
 ⚡ Quick Start: Run GPT-OSS-120B
 
